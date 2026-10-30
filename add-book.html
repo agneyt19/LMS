@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Book - Library Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="login.html">Login</a>
+  <a href="signup.html">Sign Up</a>
+  <a href="add-book.html">Add Book</a>
+  <a href="view-books.html">View Books</a>
+</nav>
+<main>
+<h1>Add Book</h1>
+<form action="view-books.html" method="post">
+  <table>
+    <tr>
+      <td><b>Book Title</b></td>
+      <td><input type="text" size="30" required></td>
+    </tr>
+    <tr>
+      <td><b>Author</b></td>
+      <td><input type="text" size="30" required></td>
+    </tr>
+    <tr>
+      <td><b>ISBN</b></td>
+      <td><input type="text" size="30" required></td>
+    </tr>
+    <tr>
+      <td><b>Category</b></td>
+      <td>
+        <select>
+          <option>Fiction</option>
+          <option>Non-Fiction</option>
+          <option>Science</option>
+          <option>History</option>
+          <option>Technology</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Publisher</b></td>
+      <td><input type="text" size="30"></td>
+    </tr>
+    <tr>
+      <td><b>Year Published</b></td>
+      <td><input type="text" size="30"></td>
+    </tr>
+    <tr>
+      <td><b>Number of Copies</b></td>
+      <td><input type="text" value="1" size="30" required></td>
+    </tr>
+    <tr>
+      <td><b>Cover Image</b></td>
+      <td><input type="file" accept="image/*"></td>
+    </tr>
+    <tr>
+      <td><b>Description</b></td>
+      <td><textarea rows="4" cols="30"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button type="submit">Add Book</button>
+        <button type="reset">Reset</button>
+      </td>
+    </tr>
+  </table>
+</form>
+</main>
+</body>
+</html>

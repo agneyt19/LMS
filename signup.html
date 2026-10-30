@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up - Library Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="login.html">Login</a>
+  <a href="signup.html">Sign Up</a>
+  <a href="add-book.html">Add Book</a>
+  <a href="view-books.html">View Books</a>
+</nav>
+<main>
+<h1>Sign Up</h1>
+<form action="login.html" method="post">
+  <table>
+    <tr>
+      <td><b>Full Name</b></td>
+      <td><input type="text" size="30" required></td>
+    </tr>
+    <tr>
+      <td><b>Email</b></td>
+      <td><input type="email" size="30" required></td>
+    </tr>
+    <tr>
+      <td><b>Phone</b></td>
+      <td><input type="tel" size="30"></td>
+    </tr>
+    <tr>
+      <td><b>Role</b></td>
+      <td>
+        <select>
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>Librarian</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Password</b></td>
+      <td><input type="password" size="30" required></td>
+    </tr>
+    <tr>
+      <td><b>Confirm Password</b></td>
+      <td><input type="password" size="30" required></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button type="submit">Create Account</button></td>
+    </tr>
+  </table>
+</form>
+<p>Already registered? <a href="login.html"><b>Login</b></a></p>
+</main>
+</body>
+</html>

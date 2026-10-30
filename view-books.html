@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>View Books - Library Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="login.html">Login</a>
+  <a href="signup.html">Sign Up</a>
+  <a href="add-book.html">Add Book</a>
+  <a href="view-books.html">View Books</a>
+</nav>
+<main>
+<h1>View Books</h1>
+<form action="view-books.html" method="get">
+  <input type="search" placeholder="Search by title, author or ISBN" size="40">
+  <button type="submit">Search</button>
+</form>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Cover</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>ISBN</th>
+      <th>Category</th>
+      <th>Year</th>
+      <th>Copies</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><img src="tokill.png" alt="Book cover" width="80" height="110"></td>
+      <td><b>To Kill a Mockingbird</b></td><td>Harper Lee</td><td>978-0061120084</td><td>Fiction</td><td>1960</td><td>3</td>
+      <td class="available"><b>Available</b></td>
+      <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><img src="abrief.png" alt="Book cover" width="80" height="110"></td>
+      <td><b>A Brief History of Time</b></td><td>Stephen Hawking</td><td>978-0553380163</td><td>Science</td><td>1988</td><td>2</td>
+      <td class="available"><b>Available</b></td>
+      <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><img src="cleancode.png" alt="Book cover" width="80" height="110"></td>
+      <td><b>Clean Code</b></td><td>Robert C. Martin</td><td>978-0132350884</td><td>Technology</td><td>2008</td><td>0</td>
+      <td class="issued"><b>Issued</b></td>
+      <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><img src="sapiens.png" alt="Book cover" width="80" height="110"></td>
+      <td><b>Sapiens</b></td><td>Yuval Noah Harari</td><td>978-0062316097</td><td>History</td><td>2015</td><td>4</td>
+      <td class="available"><b>Available</b></td>
+      <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="add-book.html"><b>+ Add a new book</b></a></p>
+</main>
+</body>
+</html>
